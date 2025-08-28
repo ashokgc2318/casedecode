@@ -17,23 +17,21 @@ body {
 header {
   background: #222;
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .logo {
   color: #fff;
   font-size: 1.8rem;
   font-weight: bold;
-  display: inline-block;
 }
 
 header nav ul {
   list-style: none;
-  float: right;
-}
-
-header nav ul li {
-  display: inline;
-  margin-left: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 header nav ul li a {
@@ -51,13 +49,14 @@ header nav ul li a:hover {
 .hero {
   text-align: center;
   padding: 6rem 2rem;
-  background: url('images/justice-bg.jpg') no-repeat center/cover;
+  background: linear-gradient(135deg, #222, #444);
   color: white;
 }
 
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  color: #00aced;
 }
 
 .hero p {
@@ -75,6 +74,7 @@ header nav ul li a:hover {
 .blog-preview h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
+  color: #222;
 }
 
 .cards {
@@ -147,15 +147,14 @@ footer a:hover {
     align-items: center;
   }
 
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
   header nav ul {
-    float: none;
-    text-align: center;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 10px;
   }
-
-  header nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
 }
-
