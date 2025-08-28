@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CaseDecode - Decoding Crime, Law & Policing</title>
-  <link rel="stylesheet" href="./style.css?v=1">
-
-
+  <title>CaseDecode | Decoding Crime, Law & Policing</title>
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <!-- Navigation -->
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="logo">CaseDecode</div>
-      <ul>
-        <li><a href="#">Home</a></li>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="#">Case Studies</a></li>
         <li><a href="#">Criminal Psychology</a></li>
         <li><a href="#">Policing Strategies</a></li>
@@ -26,30 +24,43 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Decoding Crime, Law & Policing</h1>
-    <p>Your trusted source for criminal case analysis, policing strategies, and justice insights.</p>
+    <div class="hero-content">
+      <h1>Decoding Crime, Law & Policing</h1>
+      <p>Your trusted source for criminal case analysis, policing strategies, and justice insights.</p>
+      <a href="#articles" class="btn-primary">Explore Articles</a>
+    </div>
   </section>
 
-  <!-- Blog Previews -->
-  <section class="blog-preview">
+  <!-- Latest Articles -->
+  <section class="articles" id="articles">
     <h2>Latest Articles</h2>
-    <div class="cards">
-      <div class="card">
+    <div class="article-grid">
+      <div class="article-card">
         <h3>Why People Commit Crimes</h3>
         <p>A deep dive into criminal psychology and behavioral triggers.</p>
         <a href="#">Read More →</a>
       </div>
-      <div class="card">
+      <div class="article-card">
         <h3>Reactive vs Proactive Policing</h3>
         <p>Analyzing different approaches to modern crime prevention.</p>
-        <a href="#">Read More →</a>
+        <a href="reactive-vs-proactive.html">Read More →</a>
       </div>
-      <div class="card">
+      <div class="article-card">
         <h3>Famous Criminal Cases Decoded</h3>
         <p>Exploring landmark cases and what they teach us about justice.</p>
         <a href="#">Read More →</a>
       </div>
     </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About CaseDecode</h2>
+    <p>
+      CaseDecode is dedicated to simplifying complex criminal cases, 
+      highlighting policing strategies, and exploring the psychology of crime. 
+      Our goal is to inform, educate, and spark meaningful discussions about justice.
+    </p>
   </section>
 
   <!-- Footer -->
@@ -59,4 +70,3 @@
   </footer>
 </body>
 </html>
-
