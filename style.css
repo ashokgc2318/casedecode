@@ -1,22 +1,22 @@
-/* Reset */
+/* -------- General Reset -------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Body */
 body {
-  background: #f9fafc;
+  line-height: 1.7;
+  background: #f8f9fa;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Navbar */
+/* -------- Navbar -------- */
 header {
-  background: #111;
+  background: #0a0a23;
   padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .navbar {
@@ -27,133 +27,122 @@ header {
 
 .logo {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
-}
-
-.nav-links li {
-  display: inline-block;
-  margin-left: 20px;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav-links a {
-  color: #fff;
   text-decoration: none;
+  color: #ddd;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links .active {
-  color: #00aced;
-}
-
-/* Hero Section */
-.hero {
-  height: 80vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('images/justice-bg.jpg') no-repeat center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.nav-links a:hover {
   color: #fff;
+}
+
+/* -------- Article Page -------- */
+.article-page {
+  max-width: 900px;
+  margin: 2rem auto;
   padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.hero h1 {
-  font-size: 2.8rem;
+.article-page h1 {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #00aced;
+  color: #0a0a23;
 }
 
-.hero p {
+.article-page h2 {
+  font-size: 1.6rem;
+  margin: 2rem 0 1rem;
+  color: #1a1a40;
+  border-left: 5px solid #0a0a23;
+  padding-left: 10px;
+}
+
+.article-page h3 {
   font-size: 1.2rem;
+  margin: 1.5rem 0 0.8rem;
+  color: #2a2a50;
+}
+
+.article-page p, 
+.article-page ul, 
+.article-page li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-page ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+/* -------- Meta Info -------- */
+.meta {
+  font-size: 0.9rem;
+  color: #777;
   margin-bottom: 2rem;
 }
 
-.btn-primary {
-  background: #00aced;
+/* -------- Comparison Table -------- */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+
+.comparison-table th, 
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.comparison-table th {
+  background: #0a0a23;
   color: #fff;
-  padding: 12px 25px;
+}
+
+.comparison-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* -------- Buttons -------- */
+.btn-primary {
+  display: inline-block;
+  background: #0a0a23;
+  color: #fff;
   text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: 0.3s ease;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: background 0.3s;
 }
 
 .btn-primary:hover {
-  background: #0084b4;
+  background: #1c1c4a;
 }
 
-/* Articles Section */
-.articles {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.articles h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.article-card {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.article-card:hover {
-  transform: translateY(-5px);
-}
-
-.article-card h3 {
-  margin-bottom: 1rem;
-  color: #111;
-}
-
-.article-card a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #00aced;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* About Section */
-.about {
-  padding: 4rem 2rem;
-  text-align: center;
-  background: #eef3f9;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Footer */
+/* -------- Footer -------- */
 footer {
-  background: #111;
-  color: #bbb;
   text-align: center;
-  padding: 2rem;
-  margin-top: 2rem;
-}
-
-footer a {
-  color: #00aced;
-  text-decoration: none;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  background: #0a0a23;
+  color: #fff;
+  font-size: 0.9rem;
 }
